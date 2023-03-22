@@ -227,6 +227,7 @@ c {
   }
 }*/
 
+/*Creates a carousel slideshow on the home page*/
 .slideshowcontainer {
   width: 100%;
   height: auto;
@@ -410,6 +411,7 @@ th {
   font-style: normal;
 }
 
+/*Visual line to divide the divs*/
 .line {
   border-top: 1px solid var(--lineColor);
   margin-top: 2em;
@@ -423,6 +425,7 @@ th {
   text-align: center;
 }
 
+/*Adds an asterisk for required fields*/
 #emailaddress:after , #message:after {
   content: "*";
   color: var(--fontColor);
@@ -449,6 +452,7 @@ th {
   background: #474747;
 }
 
+/*Styling for text input boxes*/
 #firstinput, #lastinput, #emailinput, textarea {
   font-family: 'Assistant', sans-serif;
   font-size: 15px;
@@ -481,6 +485,7 @@ textarea {
   resize: none;
 }
 
+/*Styling for the social media links on the contact page*/
 .social {
   display: flex;
   flex-direction: row;
@@ -553,6 +558,7 @@ textarea {
     text-align: center;
   }
   
+  /*Turns gallery into a grid when the viewport is bigger*/
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -613,15 +619,12 @@ textarea {
     margin: 0;
   }
   
-  .aboutme ul {
-    
-  }
-  
   table {
     margin: 0em auto 2em;
     width: 50%;
   }
   
+  /*Places divs side-by-side when viewport is bigger for the contact page*/
   .contactme {
     display: flex;
     flex-direction: row;
@@ -631,6 +634,7 @@ textarea {
     font-size: 25px;
   }
   
+  /*Makes a vertical line to separate the divs*/
   .line {
     border-top: 0;
     height: 600px;
@@ -655,6 +659,7 @@ textarea {
   }
 }*/
 
+/*Makes the navigation bar a collapsible side bar if viewport is too small for the default layout*/
 @media screen and (max-width: 600px) {
   :root {
     --navSize: 20px;
@@ -726,6 +731,7 @@ textarea {
     padding-left: 6px;
   }
   
+  /*Darkens the page when the sidebar is out*/
   #overlay {
     left: 0;
     top: 0;
@@ -737,15 +743,18 @@ textarea {
     display: none;
   }
   
+  /*Adjusts the buttons on the slideshow on the home page*/
   #prevBtn, #nextBtn {
     padding-top: 30%;
   }
   
+  /*To fit the text in the footer into one line on smaller viewports*/
   .footer {
     font-size: 10px;
   }
 }
 
+/*Dark theme colors*/
 @media (prefers-color-scheme: dark) {
   :root {
     --navColor: #dadada;
