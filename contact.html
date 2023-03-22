@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Jeffrey Nguyen">
+    <meta name="description" content="Final project, John Doe Freelance Photography Portfolio">
+    <meta name="keywords" content="photography, photographer, freelance photographer, portfolio, John Doe, landscape, adventure, contact">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200&display=swap" rel="stylesheet">
+    
+
+    <title>John Doe | Contact</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Creates a header -->
+    <div class="header">
+      <div class="logo">
+        <a href="index.html"><img src="https://cdn.glitch.global/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/CIS%20089%20-%20Final%20Logo%20Ver%202.png?v=1678957950488"></a>
+        <!--<h1>
+          <a href="index.html">John Doe <br> <c>PHOTOGRAPHY</c></a>
+        </h1>-->
+      </div>
+      
+      <img id="menu" src="https://cdn.glitch.global/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/menu_FILL0_wght400_GRAD0_opsz48.svg?v=1679032790920">
+      <div id="overlay"></div>
+      <!-- Links to different pages on the website  -->
+      <div class="navlink" id="navlink">
+        <div class="close" id="close">
+          &times;
+        </div>
+        <ul>
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+          <li><a href="about.html" title="About">About</a></li>
+          <li><a href="contact.html" title="Contact">Contact</a></li>
+        </ul>
+        
+        <!--PNG's of Instagram and Linkedin logos-->
+        <a href="https://www.instagram.com/" target="_blank" title="Instagram Home Page"><img class="insta"
+                                                                  src="https://cdn.glitch.global/1515e35d-ff62-4b5f-942e-698acb46740a/icons8-instagram-100.svg?v=1678841089604"></a>
+        <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn Home Page"><img class="linkedin"
+                                                                 src="https://cdn.glitch.global/1515e35d-ff62-4b5f-942e-698acb46740a/icons8-linkedin-100.svg?v=1678842033034"></a>
+        
+      </div>
+    </div>
+    
+    <div class="contactme">
+      <div class="contactinfo">
+        <h2>
+          Contact me at:
+        </h2>
+        
+        <address>
+          <a href="mailto:mrdoejohn@gmail.com" title="Not a real email">mrdoejohn@gmail.com</a> <br>
+        </address>
+        <p>
+          tel: +1(504) 333-1337
+        </p>
+        
+        <div class="social">
+          <a href="https://www.instagram.com/" target="_blank" title="Instagram Home Page"><img class="contactinsta"
+            src="https://cdn.glitch.global/1515e35d-ff62-4b5f-942e-698acb46740a/icons8-instagram-100.svg?v=1678841089604"></a>
+          <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn Home Page"><img class="contactlinkedin"
+            src="https://cdn.glitch.global/1515e35d-ff62-4b5f-942e-698acb46740a/icons8-linkedin-100.svg?v=1678842033034"></a>
+        </div> <br>
+        
+        <h3>
+          Office:
+        </h3>
+        <address>
+          John Doe Photographer <br>
+          4777 Canal Street <br>
+          New Orleans, Louisiana 70119
+        </address>
+          
+      </div>
+      
+      <div class="line"></div>
+      
+      <div class="contactform">
+        <h2>
+          Or, fill out this form:
+        </h2>
+        
+        <form name="emailme" method="GET" action="mailto:mrdowjohn@gmail.com">
+          
+          <div class="namecontainer">
+            <div class="firsnamecontainer">
+              <label for="firstname" id="firstname">First name:</label> <br>
+              <input type="text" name="firstname" placeholder="John" id="firstinput">
+            </div>
+            <div class="lastnamecontainer">
+              <label for="lastname" id="lastname">Last name:</label><br>
+              <input type="text" name="lastname" placeholder="Doe" id="lastinput"> <br>
+            </div>
+          </div>
+          <label for="emailaddress" id="emailaddress">Email:</label> <br>
+          <input type="text" name="emailaddress" placeholder="mrdoejohn@gmail.com" id="emailinput" required><br>
+          <label for="message" id="message">Message:</label><br>
+          <textarea name="message" placeholder="Write your message here..." id="messageinput" required></textarea> <br>
+          <input type="submit" name="submit" value="Send" id="submit">
+        </form>
+      </div>
+    </div>
+    
+    <!-- Creates a footer at the bottom -->
+    <div class="footer">
+      Project by Jeffrey Nguyen | Media provided by Unsplash, Wikimedia, and Pexels
+    </div>
+    
+  </body>
+</html>

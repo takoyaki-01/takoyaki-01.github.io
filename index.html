@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Jeffrey Nguyen">
+    <meta name="description" content="Final project, John Doe Freelance Photography Portfolio">
+    <meta name="keywords" content="photography, photographer, freelance photographer, portfolio, John Doe, landscape, adventure, home">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200&display=swap" rel="stylesheet">
+    
+
+    <title>John Doe | Freelance Landscape Photographer</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Creates a header -->
+    <div class="header">
+      <div class="logo">
+        <a href="index.html"><img src="https://cdn.glitch.global/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/CIS%20089%20-%20Final%20Logo%20Ver%202.png?v=1678957950488"></a>
+        <!--<h1>
+          <a href="index.html">John Doe <br> <c>PHOTOGRAPHY</c></a>
+        </h1>-->
+      </div>
+      
+      <img id="menu" src="https://cdn.glitch.global/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/menu_FILL0_wght400_GRAD0_opsz48.svg?v=1679032790920">
+      <div id="overlay"></div>
+      <!-- Links to different pages on the website  -->
+      <div class="navlink" id="navlink">
+        <div class="close" id="close">
+          &times;
+        </div>
+        <ul>
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+          <li><a href="about.html" title="About">About</a></li>
+          <li><a href="contact.html" title="Contact">Contact</a></li>
+        </ul>
+        
+        <!--PNG's of Instagram and Linkedin logos-->
+        <a href="https://www.instagram.com/" target="_blank" title="Instagram Home Page"><img class="insta"
+                                                                  src="https://cdn.glitch.global/1515e35d-ff62-4b5f-942e-698acb46740a/icons8-instagram-100.svg?v=1678841089604"></a>
+        <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn Home Page"><img class="linkedin"
+                                                                 src="https://cdn.glitch.global/1515e35d-ff62-4b5f-942e-698acb46740a/icons8-linkedin-100.svg?v=1678842033034"></a>
+        
+      </div>
+    </div>
+    
+    <!-- Fade slideshow -->
+    <!--<div class="slideshowcontainer">
+      <div class="slideshowimg fade">
+        <a href="https://unsplash.com/photos/NRQV-hBF10M" target="_blank"><img id="img1" src="https://cdn.glitch.global/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/bailey-zindel-NRQV-hBF10M-unsplash.jpg?v=1678950627592"></a>
+        <div class="text">
+            Half Dome Village, Yosemite, California
+        </div>
+      </div>
+      <div class="slideshowimg fade">
+        <a href="https://unsplash.com/photos/K2s_YE031CA" target="_blank"><img id="img2" src="https://cdn.glitch.global/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/mark-harpur-K2s_YE031CA-unsplash.jpg?v=1678950629055"></a>
+        <div class="text">
+          Lake Atitlán, Guatemala
+        </div>
+      </div>
+      <div class="slideshowimg fade">
+        <a href="https://unsplash.com/photos/KonWFWUaAuk" target="_blank"><img id="img3" src="https://cdn.glitch.global/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/ken-cheung-KonWFWUaAuk-unsplash.jpg?v=1678951970677"></a>
+        <div class="text">
+          Wanaka, Otago, New Zealand
+        </div>
+      </div>
+      <div class="slideshowimg fade">
+        <a href="https://unsplash.com/photos/zAjdgNXsMeg" target="_blank"><img id="img4" src="https://cdn.glitch.global/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/luca-bravo-zAjdgNXsMeg-unsplash.jpg?v=1678951348778"></a>
+        <div class="text">
+          Lago di Braies, Italy
+        </div>
+      </div>
+      <div class="slideshowimg fade">
+        <a href="https://unsplash.com/photos/2Hzmz15wGik" target="_blank"><img id="img5" src="https://cdn.glitch.global/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/pine-watt-2Hzmz15wGik-unsplash.jpg?v=1678951349955"></a>
+        <div class="text">
+          Sierra Nevada, California
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>-->
+    
+    <!--Carousel slideshow-->
+    <div class="slideshowcontainer">
+      <a id="prevBtn">
+        &#10094;
+      </a>
+      <a id="nextBtn">
+        &#10095;
+      </a>
+      <div class="slideshow">
+        <img id="lastClone" src="https://cdn.glitch.global/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/pine-watt-2Hzmz15wGik-unsplash.jpg?v=1678951349955" alt="Aerial Shot of a Forest" title="Aerial Shot of a Forest">
+        <img id="img1" src="https://cdn.glitch.global/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/bailey-zindel-NRQV-hBF10M-unsplash.jpg?v=1678950627592" alt="Lake by Half Dome Village" title="Lake by Half Dome Village">
+        <img id="img2" src="https://cdn.glitch.global/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/mark-harpur-K2s_YE031CA-unsplash.jpg?v=1678950629055" alt="Lavender Field by a Lake" title="Lavender Field by a Lake">
+        <img id="img3" src="https://cdn.glitch.global/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/ken-cheung-KonWFWUaAuk-unsplash.jpg?v=1678951970677" alt="Tree Within a Lake" title="Tree Within a Lake">
+        <img id="img4" src="https://cdn.glitch.global/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/luca-bravo-zAjdgNXsMeg-unsplash.jpg?v=1678951348778" alt="Boat House on a Mountain Lake" title="Boat House on a Mountain Lake">
+        <img id="img5" src="https://cdn.glitch.global/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/pine-watt-2Hzmz15wGik-unsplash.jpg?v=1678951349955" alt="Aerial Shot of a Forest" title="Aerial Shot of a Forest">
+        <img id="firstClone" src="https://cdn.glitch.global/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/bailey-zindel-NRQV-hBF10M-unsplash.jpg?v=1678950627592" alt="Lake by Half Dome Village" title="Lake by Half Dome Village">
+      </div>  
+    </div>
+    
+    
+    
+    <div class="homedescription">
+      <h3>
+        Landscapes and Wonderful Adventures
+      </h3>
+      <p>
+        Documenting our beautiful blue and green planet since 1834. And no, I'm not a vampire.
+      </p>
+    </div>
+    
+    <div class="extra-requirements">
+      
+      <video controls muted><source src="https://cdn.glitch.me/3bcafa6a-ddf8-4951-8e05-833f7657dc3e/snowy.mp4?v=1679353846828" type="video/mp4"></video>
+    </div>
+    
+    <!-- Creates a footer at the bottom -->
+    <div class="footer">
+      Project by Jeffrey Nguyen | Media provided by Unsplash, Wikimedia, and Pexels
+    </div>
+    
+  </body>
+</html>
