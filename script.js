@@ -6,6 +6,7 @@ const close = document.getElementById('close');
 
 let menuOpen = false;
 
+//Functions for opening and closing the sidebar
 function openMenu() {
   menuOpen = true;
   overlay.style.display = 'block';
@@ -32,6 +33,7 @@ close.addEventListener('click', function () {
   }
 });
 
+//Ensures that the layout resets even if the sidebar is still open when resizing the webpage
 window.addEventListener ('resize', function () {
   if (menuOpen) {
     closeMenu();
